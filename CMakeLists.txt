@@ -1,6 +1,35 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.0)
 project(Universal_Card_Software)
-
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS -pthread)
+set(SOURCE_LIST Universal_Card_Software main.cpp ICard.h IReader.h CBankCardDecorator.h CCard.h CBankCardReader.h CPasportReader.h CPasportDecorator.h CInsurancePolicyDecorator.h CInsurancePolicyReader.h CInternationalPassportDecorator.h CInternationalPassportReader.h)
+if(WITH_TEST)
+    add_definitions(-DWITH_TEST)
+endif()
+if(DEBUG)
+    set(CMAKE_BUILD_TYPE Debug)
+else()
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+find_package(GTest REQUIRED)
+add_executable(Universal_Card_Software ${SOURCE_LIST})
+find_package(Doxygen)
+option(BUILD_DOC "Build documentation" ON)
+if (CMAKE_BUILD_TYPE MATCHES "^[Rr]elease")
+find_package(Doxygen)
+if (DOXYGEN_FOUND)
+    set(DOXYGEN_IN ${CMAKE_CURRENT_SOURCE_DIR}/Configuration.in)
+    set(DOXYGEN_OUT ${CMAKE_CURRENT_BINARY_DIR}/Сonfiguration)    # request to configure the file
+    configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
+    message("Doxygen build started")
+    add_custom_target( doc_doxygen ALL
+            COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+            WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+            COMMENT "Generating API documentation with Doxygen"
+            VERBATIM )
+else (DOXYGEN_FOUND)
+    message("Doxygen need to be installed to generate the doxygen documentation")
+endif (DOXYGEN_FOUND)
+endif()
 
-add_executable(Universal_Card_Software main2.cpp ICard.h IReader.h CBankCardDecorator.h CCard.h CBankCardReader.h CPasportReader.h CPasportDecorator.h CInsurancePolicyDecorator.h CInsurancePolicyReader.h CInternationalPassportDecorator.h CInternationalPassportReader.h)
+target_link_libraries(Universal_Card_Software gtest gtest_main)
