@@ -11,6 +11,7 @@ public:
     CBankCardDecorator(std::shared_ptr<ICard> new_card)
     {
         card = new_card;
+        balance = 0;
     }
 
     ~CBankCardDecorator()

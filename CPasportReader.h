@@ -6,7 +6,7 @@
 
 class CPasportReader : public IReader{
 public:
-    CPasportReader(std::shared_ptr<CPasportReader> new_card)
+    CPasportReader(std::shared_ptr<CPasportDecorator> new_card)
     {
         card = new_card;
     }

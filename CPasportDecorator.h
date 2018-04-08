@@ -26,7 +26,7 @@ public:
         std::cout<<"Children are: "<<std::endl;
         for(int i =0; i<children.size(); ++i)
         {
-            children[i]->Get_Name();
+            std::cout<<children[i]->Get_Name()<<std::endl;
         }
     }
 
@@ -44,6 +44,22 @@ public:
     {
         return card->Get_End();
     }
+
+    void Add_Child(std::shared_ptr<ICard> child)
+    {
+        children.push_back(child);
+    }
+
+    void Set_Registration_Place(std::string new_registration_place)
+    {
+        registration_place = new_registration_place;
+    }
+
+    void Set_Wife(std::shared_ptr<ICard> new_wife)
+    {
+        wife = new_wife;
+    }
+
 
 
 private:
