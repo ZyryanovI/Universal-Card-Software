@@ -10,6 +10,9 @@
 
 class CBankReader : public IReader{
 public:
+    CBankReader()
+    {}
+
     CBankReader(std::shared_ptr<CBankCardDecorator> new_card)
     {
         card = new_card;
@@ -35,9 +38,9 @@ public:
      * @param amount денежная сумма
      */
 
-    void Withdraw_Money(double amount)
+    bool Withdraw_Money(double amount)
     {
-        card->Withdraw_Money(amount);
+        return card->Withdraw_Money(amount);
     }
 
     /**
@@ -45,9 +48,9 @@ public:
      * @param amount
      */
 
-    void Put_Money(double amount)
+    bool Put_Money(double amount)
     {
-        card->Put_Money(amount);
+        return card->Put_Money(amount);
     }
 
     /**

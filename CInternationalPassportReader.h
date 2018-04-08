@@ -10,6 +10,9 @@
 
 class CInternationalPasportReader : public IReader{
 public:
+    CInternationalPasportReader()
+    {}
+
     CInternationalPasportReader(std::shared_ptr<CInternationalPasportDecorator> new_card)
     {
         card = new_card;

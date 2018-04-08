@@ -10,6 +10,9 @@
 
 class CInsurancePolicyReader : public IReader{
 public:
+    CInsurancePolicyReader()
+    {}
+
     CInsurancePolicyReader(std::shared_ptr<CInsurancePolicyDecorator> new_card)
     {
         card = new_card;

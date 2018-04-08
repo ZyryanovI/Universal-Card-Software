@@ -10,6 +10,9 @@
 
 class CPasportReader : public IReader{
 public:
+    CPasportReader()
+    {}
+
     CPasportReader(std::shared_ptr<CPasportDecorator> new_card)
     {
         card = new_card;
