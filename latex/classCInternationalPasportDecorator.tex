@@ -1,0 +1,149 @@
+\hypertarget{classCInternationalPasportDecorator}{}\section{C\+International\+Pasport\+Decorator Class Reference}
+\label{classCInternationalPasportDecorator}\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+
+
+Декорирование загран паспорта  
+
+
+
+
+{\ttfamily \#include $<$C\+International\+Passport\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+International\+Pasport\+Decorator\+:
+% FIG 0
+
+
+Collaboration diagram for C\+International\+Pasport\+Decorator\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+International\+Pasport\+Decorator} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)\hypertarget{classCInternationalPasportDecorator_a80bc080c1ff4debacb4400d1d3daa37a}{}\label{classCInternationalPasportDecorator_a80bc080c1ff4debacb4400d1d3daa37a}
+
+\item 
+void \hyperlink{classCInternationalPasportDecorator_a5f9edcd04ea9b5c4f845e28d98baf558}{Get\+\_\+\+Info} ()
+\begin{DoxyCompactList}\small\item\em Функция, выводящаяя информацию о загран паспорте \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCInternationalPasportDecorator_a03e853349bc53e7d393c1afbf8820a03}{Get\+\_\+\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей имя \end{DoxyCompactList}\item 
+unsigned long long int \hyperlink{classCInternationalPasportDecorator_a22b81d60c1174a2afeedb0f5870c79d7}{Get\+\_\+\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCInternationalPasportDecorator_a3e5ea260b74f145373f529fdce92b7b0}{Get\+\_\+\+End} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей дату окончания срок действия карты \end{DoxyCompactList}\item 
+void \hyperlink{classCInternationalPasportDecorator_ab33808acddca7c90298af3e2263c57f3}{Set\+\_\+\+Home\+\_\+\+Country} (std\+::string new\+\_\+home\+\_\+country)
+\begin{DoxyCompactList}\small\item\em Установка новой страны постоянного места проживания \end{DoxyCompactList}\item 
+void \hyperlink{classCInternationalPasportDecorator_a5c2eb64545a378881deefe39c82b8cdd}{Add\+\_\+\+Country} (std\+::string new\+\_\+country)
+\begin{DoxyCompactList}\small\item\em Добавляет страну в посещенные \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декорирование загран паспорта 
+
+\subsection{Member Function Documentation}
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Add\+\_\+\+Country@{Add\+\_\+\+Country}}
+\index{Add\+\_\+\+Country@{Add\+\_\+\+Country}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Add\+\_\+\+Country(std\+::string new\+\_\+country)}{Add_Country(std::string new_country)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+International\+Pasport\+Decorator\+::\+Add\+\_\+\+Country (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+country}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInternationalPasportDecorator_a5c2eb64545a378881deefe39c82b8cdd}{}\label{classCInternationalPasportDecorator_a5c2eb64545a378881deefe39c82b8cdd}
+
+
+Добавляет страну в посещенные 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+country} & \\
+\hline
+\end{DoxyParams}
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Get\+\_\+\+End@{Get\+\_\+\+End}}
+\index{Get\+\_\+\+End@{Get\+\_\+\+End}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+End() const }{Get_End() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+International\+Pasport\+Decorator\+::\+Get\+\_\+\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInternationalPasportDecorator_a3e5ea260b74f145373f529fdce92b7b0}{}\label{classCInternationalPasportDecorator_a3e5ea260b74f145373f529fdce92b7b0}
+
+
+Реализация функции, возвращающей дату окончания срок действия карты 
+
+\begin{DoxyReturn}{Returns}
+дата окончания срок действия карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Get\+\_\+\+Id@{Get\+\_\+\+Id}}
+\index{Get\+\_\+\+Id@{Get\+\_\+\+Id}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Id() const }{Get_Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int C\+International\+Pasport\+Decorator\+::\+Get\+\_\+\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInternationalPasportDecorator_a22b81d60c1174a2afeedb0f5870c79d7}{}\label{classCInternationalPasportDecorator_a22b81d60c1174a2afeedb0f5870c79d7}
+
+
+Реализация функции, возвращающей id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Get\+\_\+\+Info@{Get\+\_\+\+Info}}
+\index{Get\+\_\+\+Info@{Get\+\_\+\+Info}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Info()}{Get_Info()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+International\+Pasport\+Decorator\+::\+Get\+\_\+\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInternationalPasportDecorator_a5f9edcd04ea9b5c4f845e28d98baf558}{}\label{classCInternationalPasportDecorator_a5f9edcd04ea9b5c4f845e28d98baf558}
+
+
+Функция, выводящаяя информацию о загран паспорте 
+
+Выводит имя, страну постоянного места жительства и посещенные страны 
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Get\+\_\+\+Name@{Get\+\_\+\+Name}}
+\index{Get\+\_\+\+Name@{Get\+\_\+\+Name}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Name() const }{Get_Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+International\+Pasport\+Decorator\+::\+Get\+\_\+\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInternationalPasportDecorator_a03e853349bc53e7d393c1afbf8820a03}{}\label{classCInternationalPasportDecorator_a03e853349bc53e7d393c1afbf8820a03}
+
+
+Реализация функции, возвращающей имя 
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}!Set\+\_\+\+Home\+\_\+\+Country@{Set\+\_\+\+Home\+\_\+\+Country}}
+\index{Set\+\_\+\+Home\+\_\+\+Country@{Set\+\_\+\+Home\+\_\+\+Country}!C\+International\+Pasport\+Decorator@{C\+International\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Home\+\_\+\+Country(std\+::string new\+\_\+home\+\_\+country)}{Set_Home_Country(std::string new_home_country)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+International\+Pasport\+Decorator\+::\+Set\+\_\+\+Home\+\_\+\+Country (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+home\+\_\+country}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInternationalPasportDecorator_ab33808acddca7c90298af3e2263c57f3}{}\label{classCInternationalPasportDecorator_ab33808acddca7c90298af3e2263c57f3}
+
+
+Установка новой страны постоянного места проживания 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+home\+\_\+country} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+International\+Passport\+Decorator.\+h\end{DoxyCompactItemize}

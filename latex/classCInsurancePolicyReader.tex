@@ -1,0 +1,109 @@
+\hypertarget{classCInsurancePolicyReader}{}\section{C\+Insurance\+Policy\+Reader Class Reference}
+\label{classCInsurancePolicyReader}\index{C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}}
+
+
+Декорирование страхового полиса  
+
+
+
+
+{\ttfamily \#include $<$C\+Insurance\+Policy\+Reader.\+h$>$}
+
+
+
+Inheritance diagram for C\+Insurance\+Policy\+Reader\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Insurance\+Policy\+Reader\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Insurance\+Policy\+Reader} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCInsurancePolicyDecorator}{C\+Insurance\+Policy\+Decorator} $>$ new\+\_\+card)\hypertarget{classCInsurancePolicyReader_ab5c43e8d7a654cd32c62b90ca6ca1ded}{}\label{classCInsurancePolicyReader_ab5c43e8d7a654cd32c62b90ca6ca1ded}
+
+\item 
+void \hyperlink{classCInsurancePolicyReader_a8cb59f3873454c17fbc03bc4dd9ee07c}{Read} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)
+\begin{DoxyCompactList}\small\item\em Функция считывания карты \end{DoxyCompactList}\item 
+void \hyperlink{classCInsurancePolicyReader_ab8014e3d641ba2039c320e31bfd1eacb}{Show\+\_\+\+Info} ()\hypertarget{classCInsurancePolicyReader_ab8014e3d641ba2039c320e31bfd1eacb}{}\label{classCInsurancePolicyReader_ab8014e3d641ba2039c320e31bfd1eacb}
+
+\begin{DoxyCompactList}\small\item\em Функция, выводящая информацию о страховом полисе \end{DoxyCompactList}\item 
+void \hyperlink{classCInsurancePolicyReader_a21dc3cbbe3ea49e2848520ce86c7ead4}{Add\+\_\+\+Situation} (std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)
+\begin{DoxyCompactList}\small\item\em Функция, добавляющая новую страховую ситуцацию \end{DoxyCompactList}\item 
+void \hyperlink{classCInsurancePolicyReader_aabe91378662a755bc82a9876f62eef5a}{Remove\+\_\+\+Situation} (std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)
+\begin{DoxyCompactList}\small\item\em Функция, удаляющая ситуацию \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декорирование страхового полиса 
+
+\subsection{Member Function Documentation}
+\index{C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}!Add\+\_\+\+Situation@{Add\+\_\+\+Situation}}
+\index{Add\+\_\+\+Situation@{Add\+\_\+\+Situation}!C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}}
+\subsubsection[{\texorpdfstring{Add\+\_\+\+Situation(std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)}{Add_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Reader\+::\+Add\+\_\+\+Situation (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+situation\+\_\+name, }
+\item[{double}]{new\+\_\+payments, }
+\item[{double}]{new\+\_\+amount\+\_\+paid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInsurancePolicyReader_a21dc3cbbe3ea49e2848520ce86c7ead4}{}\label{classCInsurancePolicyReader_a21dc3cbbe3ea49e2848520ce86c7ead4}
+
+
+Функция, добавляющая новую страховую ситуцацию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+situation\+\_\+name} & имя ситуации \\
+\hline
+{\em new\+\_\+payments} & выплаты в случае ее происшествия \\
+\hline
+{\em new\+\_\+amount\+\_\+paid} & сколько заплатил клиент \\
+\hline
+\end{DoxyParams}
+\index{C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}!Read@{Read}}
+\index{Read@{Read}!C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}}
+\subsubsection[{\texorpdfstring{Read(std\+::shared\+\_\+ptr$<$ I\+Card $>$ new\+\_\+card)}{Read(std::shared_ptr< ICard > new_card)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Reader\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Card} $>$}]{new\+\_\+card}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInsurancePolicyReader_a8cb59f3873454c17fbc03bc4dd9ee07c}{}\label{classCInsurancePolicyReader_a8cb59f3873454c17fbc03bc4dd9ee07c}
+
+
+Функция считывания карты 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+card} & указатель на карту \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIReader}{I\+Reader}.
+
+\index{C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}!Remove\+\_\+\+Situation@{Remove\+\_\+\+Situation}}
+\index{Remove\+\_\+\+Situation@{Remove\+\_\+\+Situation}!C\+Insurance\+Policy\+Reader@{C\+Insurance\+Policy\+Reader}}
+\subsubsection[{\texorpdfstring{Remove\+\_\+\+Situation(std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)}{Remove_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Reader\+::\+Remove\+\_\+\+Situation (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+situation\+\_\+name, }
+\item[{double}]{new\+\_\+payments, }
+\item[{double}]{new\+\_\+amount\+\_\+paid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInsurancePolicyReader_aabe91378662a755bc82a9876f62eef5a}{}\label{classCInsurancePolicyReader_aabe91378662a755bc82a9876f62eef5a}
+
+
+Функция, удаляющая ситуацию 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+situation\+\_\+name} & имя ситуации \\
+\hline
+{\em new\+\_\+payments} & выплаты в случае ее происшествия \\
+\hline
+{\em new\+\_\+amount\+\_\+paid} & сколько заплатил клиент \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Insurance\+Policy\+Reader.\+h\end{DoxyCompactItemize}

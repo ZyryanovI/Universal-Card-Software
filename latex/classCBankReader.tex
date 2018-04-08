@@ -1,0 +1,136 @@
+\hypertarget{classCBankReader}{}\section{C\+Bank\+Reader Class Reference}
+\label{classCBankReader}\index{C\+Bank\+Reader@{C\+Bank\+Reader}}
+
+
+Считывающее устройство для банкосвкой карты  
+
+
+
+
+{\ttfamily \#include $<$C\+Bank\+Card\+Reader.\+h$>$}
+
+
+
+Inheritance diagram for C\+Bank\+Reader\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Bank\+Reader\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Bank\+Reader} (std\+::shared\+\_\+ptr$<$ \hyperlink{classCBankCardDecorator}{C\+Bank\+Card\+Decorator} $>$ new\+\_\+card)\hypertarget{classCBankReader_a27fe18f60a46d95d8e8b022785bec641}{}\label{classCBankReader_a27fe18f60a46d95d8e8b022785bec641}
+
+\item 
+void \hyperlink{classCBankReader_a69ed3dcbbd5fe76cc8b1e1db2b841128}{Read} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)
+\begin{DoxyCompactList}\small\item\em Считывание карты \end{DoxyCompactList}\item 
+void \hyperlink{classCBankReader_afd2d3b073729079d75460e4cfde0ccbc}{Withdraw\+\_\+\+Money} (double amount)
+\begin{DoxyCompactList}\small\item\em Функция снятия денег \end{DoxyCompactList}\item 
+void \hyperlink{classCBankReader_a1a64f1bc129b6238ce382317d3ff8d24}{Put\+\_\+\+Money} (double amount)
+\begin{DoxyCompactList}\small\item\em Функция пополнения счета \end{DoxyCompactList}\item 
+void \hyperlink{classCBankReader_aabeebe40ce562468fa876e83638a2c04}{Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card} (unsigned long long int card\+\_\+id, double amount)
+\begin{DoxyCompactList}\small\item\em Функция перевода денег на другую карту \end{DoxyCompactList}\item 
+void \hyperlink{classCBankReader_ae138c3644cd3a14e2f36a58349efab59}{Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone} (std\+::string number, double amount)
+\begin{DoxyCompactList}\small\item\em Пополнение счета на телефоне \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Считывающее устройство для банкосвкой карты 
+
+\subsection{Member Function Documentation}
+\index{C\+Bank\+Reader@{C\+Bank\+Reader}!Put\+\_\+\+Money@{Put\+\_\+\+Money}}
+\index{Put\+\_\+\+Money@{Put\+\_\+\+Money}!C\+Bank\+Reader@{C\+Bank\+Reader}}
+\subsubsection[{\texorpdfstring{Put\+\_\+\+Money(double amount)}{Put_Money(double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Reader\+::\+Put\+\_\+\+Money (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankReader_a1a64f1bc129b6238ce382317d3ff8d24}{}\label{classCBankReader_a1a64f1bc129b6238ce382317d3ff8d24}
+
+
+Функция пополнения счета 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+\index{C\+Bank\+Reader@{C\+Bank\+Reader}!Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone@{Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone}}
+\index{Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone@{Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone}!C\+Bank\+Reader@{C\+Bank\+Reader}}
+\subsubsection[{\texorpdfstring{Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone(std\+::string number, double amount)}{Put_Money_To_Phone(std::string number, double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Reader\+::\+Put\+\_\+\+Money\+\_\+\+To\+\_\+\+Phone (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{number, }
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankReader_ae138c3644cd3a14e2f36a58349efab59}{}\label{classCBankReader_ae138c3644cd3a14e2f36a58349efab59}
+
+
+Пополнение счета на телефоне 
+
+В случае успешного перевода выводит сообщение об успехе, иначе сообщение об ошибке 
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+\index{C\+Bank\+Reader@{C\+Bank\+Reader}!Read@{Read}}
+\index{Read@{Read}!C\+Bank\+Reader@{C\+Bank\+Reader}}
+\subsubsection[{\texorpdfstring{Read(std\+::shared\+\_\+ptr$<$ I\+Card $>$ new\+\_\+card)}{Read(std::shared_ptr< ICard > new_card)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Reader\+::\+Read (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Card} $>$}]{new\+\_\+card}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCBankReader_a69ed3dcbbd5fe76cc8b1e1db2b841128}{}\label{classCBankReader_a69ed3dcbbd5fe76cc8b1e1db2b841128}
+
+
+Считывание карты 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+card} & указатель на карту \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIReader}{I\+Reader}.
+
+\index{C\+Bank\+Reader@{C\+Bank\+Reader}!Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card@{Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card}}
+\index{Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card@{Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card}!C\+Bank\+Reader@{C\+Bank\+Reader}}
+\subsubsection[{\texorpdfstring{Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card(unsigned long long int card\+\_\+id, double amount)}{Transfer_To_Another_Card(unsigned long long int card_id, double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Reader\+::\+Transfer\+\_\+\+To\+\_\+\+Another\+\_\+\+Card (
+\begin{DoxyParamCaption}
+\item[{unsigned long long int}]{card\+\_\+id, }
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankReader_aabeebe40ce562468fa876e83638a2c04}{}\label{classCBankReader_aabeebe40ce562468fa876e83638a2c04}
+
+
+Функция перевода денег на другую карту 
+
+В случае успешного перевода выводит сообщение об успехе, иначе сообщение об ошибке 
+\begin{DoxyParams}{Parameters}
+{\em card\+\_\+id} & \\
+\hline
+{\em amount} & \\
+\hline
+\end{DoxyParams}
+\index{C\+Bank\+Reader@{C\+Bank\+Reader}!Withdraw\+\_\+\+Money@{Withdraw\+\_\+\+Money}}
+\index{Withdraw\+\_\+\+Money@{Withdraw\+\_\+\+Money}!C\+Bank\+Reader@{C\+Bank\+Reader}}
+\subsubsection[{\texorpdfstring{Withdraw\+\_\+\+Money(double amount)}{Withdraw_Money(double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Reader\+::\+Withdraw\+\_\+\+Money (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankReader_afd2d3b073729079d75460e4cfde0ccbc}{}\label{classCBankReader_afd2d3b073729079d75460e4cfde0ccbc}
+
+
+Функция снятия денег 
+
+В случае ошибки выводит сообщение об ошибке 
+\begin{DoxyParams}{Parameters}
+{\em amount} & денежная сумма \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Bank\+Card\+Reader.\+h\end{DoxyCompactItemize}

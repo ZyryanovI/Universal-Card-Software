@@ -1,0 +1,113 @@
+\hypertarget{classCCard}{}\section{C\+Card Class Reference}
+\label{classCCard}\index{C\+Card@{C\+Card}}
+
+
+Реализация карты  
+
+
+
+
+{\ttfamily \#include $<$C\+Card.\+h$>$}
+
+
+
+Inheritance diagram for C\+Card\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Card\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Card} (unsigned long long int new\+\_\+id, std\+::string new\+\_\+user\+\_\+full\+\_\+name, std\+::string new\+\_\+ending\+\_\+day)\hypertarget{classCCard_ac3173217d1bb0bb362981231f08c64a9}{}\label{classCCard_ac3173217d1bb0bb362981231f08c64a9}
+
+\item 
+void \hyperlink{classCCard_a8e53627729d198a1c7a202e4ca7d38f9}{Get\+\_\+\+Info} ()
+\begin{DoxyCompactList}\small\item\em Выводит информацию о карте \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCCard_afcfc2ac27e7e54636eee24b818f63d6b}{Get\+\_\+\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей имя \end{DoxyCompactList}\item 
+unsigned long long int \hyperlink{classCCard_a88c6220ef7622353728311db49bbe67b}{Get\+\_\+\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCCard_a840f827a171f1cbc0d3b06924e6596cb}{Get\+\_\+\+End} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей дату окончания срок действия карты \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Реализация карты 
+
+\subsection{Member Function Documentation}
+\index{C\+Card@{C\+Card}!Get\+\_\+\+End@{Get\+\_\+\+End}}
+\index{Get\+\_\+\+End@{Get\+\_\+\+End}!C\+Card@{C\+Card}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+End() const }{Get_End() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Card\+::\+Get\+\_\+\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCCard_a840f827a171f1cbc0d3b06924e6596cb}{}\label{classCCard_a840f827a171f1cbc0d3b06924e6596cb}
+
+
+Реализация функции, возвращающей дату окончания срок действия карты 
+
+\begin{DoxyReturn}{Returns}
+дата окончания срок действия карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Card@{C\+Card}!Get\+\_\+\+Id@{Get\+\_\+\+Id}}
+\index{Get\+\_\+\+Id@{Get\+\_\+\+Id}!C\+Card@{C\+Card}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Id() const }{Get_Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int C\+Card\+::\+Get\+\_\+\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCCard_a88c6220ef7622353728311db49bbe67b}{}\label{classCCard_a88c6220ef7622353728311db49bbe67b}
+
+
+Реализация функции, возвращающей id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Card@{C\+Card}!Get\+\_\+\+Info@{Get\+\_\+\+Info}}
+\index{Get\+\_\+\+Info@{Get\+\_\+\+Info}!C\+Card@{C\+Card}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Info()}{Get_Info()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Card\+::\+Get\+\_\+\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCCard_a8e53627729d198a1c7a202e4ca7d38f9}{}\label{classCCard_a8e53627729d198a1c7a202e4ca7d38f9}
+
+
+Выводит информацию о карте 
+
+Выводит имя, id и дату окончания срока действия 
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Card@{C\+Card}!Get\+\_\+\+Name@{Get\+\_\+\+Name}}
+\index{Get\+\_\+\+Name@{Get\+\_\+\+Name}!C\+Card@{C\+Card}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Name() const }{Get_Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Card\+::\+Get\+\_\+\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCCard_afcfc2ac27e7e54636eee24b818f63d6b}{}\label{classCCard_afcfc2ac27e7e54636eee24b818f63d6b}
+
+
+Реализация функции, возвращающей имя 
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Card.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{classCInsurancePolicyDecorator}{}\section{C\+Insurance\+Policy\+Decorator Class Reference}
+\label{classCInsurancePolicyDecorator}\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+
+
+Inheritance diagram for C\+Insurance\+Policy\+Decorator\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Insurance\+Policy\+Decorator\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Insurance\+Policy\+Decorator} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)\hypertarget{classCInsurancePolicyDecorator_a93ea0be7631178a04ffaa33a74b64058}{}\label{classCInsurancePolicyDecorator_a93ea0be7631178a04ffaa33a74b64058}
+
+\item 
+void \hyperlink{classCInsurancePolicyDecorator_a384623ef8968d9fb0c969d38df389a5c}{Get\+\_\+\+Info} ()
+\begin{DoxyCompactList}\small\item\em Функция, выводящая информацию \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCInsurancePolicyDecorator_aee255120cc97e0343a7c4ef4a32a24cd}{Get\+\_\+\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей имя \end{DoxyCompactList}\item 
+unsigned long long int \hyperlink{classCInsurancePolicyDecorator_adbf5a35779814478d2566e359e195920}{Get\+\_\+\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCInsurancePolicyDecorator_a797cbfc7822cc8fa7d9ccad23340ddd4}{Get\+\_\+\+End} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей дату окончания срок действия карты \end{DoxyCompactList}\item 
+void \hyperlink{classCInsurancePolicyDecorator_aa1c549f45d71080274017448fa76f71b}{Add\+\_\+\+Situation} (std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)
+\begin{DoxyCompactList}\small\item\em Добавление новой страховой ситуации \end{DoxyCompactList}\item 
+int \hyperlink{classCInsurancePolicyDecorator_ad51167a636d8bf02b571b1e6f9d731ae}{Find\+\_\+\+Situation} (std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)
+\begin{DoxyCompactList}\small\item\em Поиск страховой ситуации \end{DoxyCompactList}\item 
+void \hyperlink{classCInsurancePolicyDecorator_a1f2c4a9d1ef45b97e2fb5d0af2422d20}{Remove\+\_\+\+Situation} (std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)
+\begin{DoxyCompactList}\small\item\em Удаление ситации \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Add\+\_\+\+Situation@{Add\+\_\+\+Situation}}
+\index{Add\+\_\+\+Situation@{Add\+\_\+\+Situation}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Add\+\_\+\+Situation(std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)}{Add_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Decorator\+::\+Add\+\_\+\+Situation (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+situation\+\_\+name, }
+\item[{double}]{new\+\_\+payments, }
+\item[{double}]{new\+\_\+amount\+\_\+paid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInsurancePolicyDecorator_aa1c549f45d71080274017448fa76f71b}{}\label{classCInsurancePolicyDecorator_aa1c549f45d71080274017448fa76f71b}
+
+
+Добавление новой страховой ситуации 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+situation\+\_\+name} & \\
+\hline
+{\em new\+\_\+payments} & \\
+\hline
+{\em new\+\_\+amount\+\_\+paid} & \\
+\hline
+\end{DoxyParams}
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Find\+\_\+\+Situation@{Find\+\_\+\+Situation}}
+\index{Find\+\_\+\+Situation@{Find\+\_\+\+Situation}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Find\+\_\+\+Situation(std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)}{Find_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Insurance\+Policy\+Decorator\+::\+Find\+\_\+\+Situation (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+situation\+\_\+name, }
+\item[{double}]{new\+\_\+payments, }
+\item[{double}]{new\+\_\+amount\+\_\+paid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInsurancePolicyDecorator_ad51167a636d8bf02b571b1e6f9d731ae}{}\label{classCInsurancePolicyDecorator_ad51167a636d8bf02b571b1e6f9d731ae}
+
+
+Поиск страховой ситуации 
+
+Поиск производится по трем параметра ситуации 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+situation\+\_\+name} & \\
+\hline
+{\em new\+\_\+payments} & \\
+\hline
+{\em new\+\_\+amount\+\_\+paid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Индекс вхождения ситуации, если не найден -\/1 
+\end{DoxyReturn}
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Get\+\_\+\+End@{Get\+\_\+\+End}}
+\index{Get\+\_\+\+End@{Get\+\_\+\+End}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+End() const }{Get_End() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Insurance\+Policy\+Decorator\+::\+Get\+\_\+\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInsurancePolicyDecorator_a797cbfc7822cc8fa7d9ccad23340ddd4}{}\label{classCInsurancePolicyDecorator_a797cbfc7822cc8fa7d9ccad23340ddd4}
+
+
+Реализация функции, возвращающей дату окончания срок действия карты 
+
+\begin{DoxyReturn}{Returns}
+дата окончания срок действия карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Get\+\_\+\+Id@{Get\+\_\+\+Id}}
+\index{Get\+\_\+\+Id@{Get\+\_\+\+Id}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Id() const }{Get_Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int C\+Insurance\+Policy\+Decorator\+::\+Get\+\_\+\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInsurancePolicyDecorator_adbf5a35779814478d2566e359e195920}{}\label{classCInsurancePolicyDecorator_adbf5a35779814478d2566e359e195920}
+
+
+Реализация функции, возвращающей id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Get\+\_\+\+Info@{Get\+\_\+\+Info}}
+\index{Get\+\_\+\+Info@{Get\+\_\+\+Info}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Info()}{Get_Info()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Decorator\+::\+Get\+\_\+\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInsurancePolicyDecorator_a384623ef8968d9fb0c969d38df389a5c}{}\label{classCInsurancePolicyDecorator_a384623ef8968d9fb0c969d38df389a5c}
+
+
+Функция, выводящая информацию 
+
+Выводит имя клиента и перечень страховых ситуаций 
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Get\+\_\+\+Name@{Get\+\_\+\+Name}}
+\index{Get\+\_\+\+Name@{Get\+\_\+\+Name}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Name() const }{Get_Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Insurance\+Policy\+Decorator\+::\+Get\+\_\+\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCInsurancePolicyDecorator_aee255120cc97e0343a7c4ef4a32a24cd}{}\label{classCInsurancePolicyDecorator_aee255120cc97e0343a7c4ef4a32a24cd}
+
+
+Реализация функции, возвращающей имя 
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}!Remove\+\_\+\+Situation@{Remove\+\_\+\+Situation}}
+\index{Remove\+\_\+\+Situation@{Remove\+\_\+\+Situation}!C\+Insurance\+Policy\+Decorator@{C\+Insurance\+Policy\+Decorator}}
+\subsubsection[{\texorpdfstring{Remove\+\_\+\+Situation(std\+::string new\+\_\+situation\+\_\+name, double new\+\_\+payments, double new\+\_\+amount\+\_\+paid)}{Remove_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Insurance\+Policy\+Decorator\+::\+Remove\+\_\+\+Situation (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+situation\+\_\+name, }
+\item[{double}]{new\+\_\+payments, }
+\item[{double}]{new\+\_\+amount\+\_\+paid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCInsurancePolicyDecorator_a1f2c4a9d1ef45b97e2fb5d0af2422d20}{}\label{classCInsurancePolicyDecorator_a1f2c4a9d1ef45b97e2fb5d0af2422d20}
+
+
+Удаление ситации 
+
+Производится поиск ситуации, если не найдена -\/ сообщение об ошибке, инча удаляется 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+situation\+\_\+name} & \\
+\hline
+{\em new\+\_\+payments} & \\
+\hline
+{\em new\+\_\+amount\+\_\+paid} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Insurance\+Policy\+Decorator.\+h\end{DoxyCompactItemize}

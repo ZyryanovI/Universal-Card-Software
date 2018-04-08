@@ -1,0 +1,167 @@
+\hypertarget{classCPasportDecorator}{}\section{C\+Pasport\+Decorator Class Reference}
+\label{classCPasportDecorator}\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+
+
+Декорирование паспорта  
+
+
+
+
+{\ttfamily \#include $<$C\+Pasport\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+Pasport\+Decorator\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Pasport\+Decorator\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Pasport\+Decorator} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)\hypertarget{classCPasportDecorator_a90fabb0b36bc79f96b07eb364e034a3c}{}\label{classCPasportDecorator_a90fabb0b36bc79f96b07eb364e034a3c}
+
+\item 
+void \hyperlink{classCPasportDecorator_ab02f32110fa20a11c09fcb3bc6e05a9e}{Get\+\_\+\+Info} ()
+\begin{DoxyCompactList}\small\item\em Выводит информацию о паспорте \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCPasportDecorator_a5057df68d924b5c8eddf472c0ea1f079}{Get\+\_\+\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей имя \end{DoxyCompactList}\item 
+unsigned long long int \hyperlink{classCPasportDecorator_a48884f3bbb9cb8428dfc1fc03c3b70a1}{Get\+\_\+\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCPasportDecorator_a1e3ea08fd69b0428ef911535a1b3274f}{Get\+\_\+\+End} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей дату окончания срок действия карты \end{DoxyCompactList}\item 
+void \hyperlink{classCPasportDecorator_a553525eb997b1879289744a12ae0abff}{Add\+\_\+\+Child} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ child)
+\begin{DoxyCompactList}\small\item\em Функции добавления детей \end{DoxyCompactList}\item 
+void \hyperlink{classCPasportDecorator_aa12a6517f0168fe39aa307d037ee3d55}{Set\+\_\+\+Registration\+\_\+\+Place} (std\+::string new\+\_\+registration\+\_\+place)
+\begin{DoxyCompactList}\small\item\em функция изменения регистрации \end{DoxyCompactList}\item 
+void \hyperlink{classCPasportDecorator_a3d94d976fdf2276bebaf2d21bd3eb55b}{Set\+\_\+\+Wife} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+wife)
+\begin{DoxyCompactList}\small\item\em Функция изменения жены \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декорирование паспорта 
+
+\subsection{Member Function Documentation}
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Add\+\_\+\+Child@{Add\+\_\+\+Child}}
+\index{Add\+\_\+\+Child@{Add\+\_\+\+Child}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Add\+\_\+\+Child(std\+::shared\+\_\+ptr$<$ I\+Card $>$ child)}{Add_Child(std::shared_ptr< ICard > child)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Pasport\+Decorator\+::\+Add\+\_\+\+Child (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Card} $>$}]{child}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCPasportDecorator_a553525eb997b1879289744a12ae0abff}{}\label{classCPasportDecorator_a553525eb997b1879289744a12ae0abff}
+
+
+Функции добавления детей 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & -\/ указатель на карту ребенка \\
+\hline
+\end{DoxyParams}
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Get\+\_\+\+End@{Get\+\_\+\+End}}
+\index{Get\+\_\+\+End@{Get\+\_\+\+End}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+End() const }{Get_End() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Pasport\+Decorator\+::\+Get\+\_\+\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCPasportDecorator_a1e3ea08fd69b0428ef911535a1b3274f}{}\label{classCPasportDecorator_a1e3ea08fd69b0428ef911535a1b3274f}
+
+
+Реализация функции, возвращающей дату окончания срок действия карты 
+
+\begin{DoxyReturn}{Returns}
+дата окончания срок действия карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Get\+\_\+\+Id@{Get\+\_\+\+Id}}
+\index{Get\+\_\+\+Id@{Get\+\_\+\+Id}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Id() const }{Get_Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int C\+Pasport\+Decorator\+::\+Get\+\_\+\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCPasportDecorator_a48884f3bbb9cb8428dfc1fc03c3b70a1}{}\label{classCPasportDecorator_a48884f3bbb9cb8428dfc1fc03c3b70a1}
+
+
+Реализация функции, возвращающей id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Get\+\_\+\+Info@{Get\+\_\+\+Info}}
+\index{Get\+\_\+\+Info@{Get\+\_\+\+Info}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Info()}{Get_Info()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Pasport\+Decorator\+::\+Get\+\_\+\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCPasportDecorator_ab02f32110fa20a11c09fcb3bc6e05a9e}{}\label{classCPasportDecorator_ab02f32110fa20a11c09fcb3bc6e05a9e}
+
+
+Выводит информацию о паспорте 
+
+Выводит имя пользователя, регистрацию, именя женыи детей, если они есть 
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Get\+\_\+\+Name@{Get\+\_\+\+Name}}
+\index{Get\+\_\+\+Name@{Get\+\_\+\+Name}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Name() const }{Get_Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Pasport\+Decorator\+::\+Get\+\_\+\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCPasportDecorator_a5057df68d924b5c8eddf472c0ea1f079}{}\label{classCPasportDecorator_a5057df68d924b5c8eddf472c0ea1f079}
+
+
+Реализация функции, возвращающей имя 
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Set\+\_\+\+Registration\+\_\+\+Place@{Set\+\_\+\+Registration\+\_\+\+Place}}
+\index{Set\+\_\+\+Registration\+\_\+\+Place@{Set\+\_\+\+Registration\+\_\+\+Place}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Registration\+\_\+\+Place(std\+::string new\+\_\+registration\+\_\+place)}{Set_Registration_Place(std::string new_registration_place)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Pasport\+Decorator\+::\+Set\+\_\+\+Registration\+\_\+\+Place (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{new\+\_\+registration\+\_\+place}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCPasportDecorator_aa12a6517f0168fe39aa307d037ee3d55}{}\label{classCPasportDecorator_aa12a6517f0168fe39aa307d037ee3d55}
+
+
+функция изменения регистрации 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+registration\+\_\+place} & -\/ новое место прописки \\
+\hline
+\end{DoxyParams}
+\index{C\+Pasport\+Decorator@{C\+Pasport\+Decorator}!Set\+\_\+\+Wife@{Set\+\_\+\+Wife}}
+\index{Set\+\_\+\+Wife@{Set\+\_\+\+Wife}!C\+Pasport\+Decorator@{C\+Pasport\+Decorator}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Wife(std\+::shared\+\_\+ptr$<$ I\+Card $>$ new\+\_\+wife)}{Set_Wife(std::shared_ptr< ICard > new_wife)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Pasport\+Decorator\+::\+Set\+\_\+\+Wife (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf I\+Card} $>$}]{new\+\_\+wife}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCPasportDecorator_a3d94d976fdf2276bebaf2d21bd3eb55b}{}\label{classCPasportDecorator_a3d94d976fdf2276bebaf2d21bd3eb55b}
+
+
+Функция изменения жены 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+wife} & -\/ указатель на карту жены \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Pasport\+Decorator.\+h\end{DoxyCompactItemize}

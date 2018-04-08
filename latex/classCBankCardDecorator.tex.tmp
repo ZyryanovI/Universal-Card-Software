@@ -1,0 +1,152 @@
+\hypertarget{classCBankCardDecorator}{}\section{C\+Bank\+Card\+Decorator Class Reference}
+\label{classCBankCardDecorator}\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+
+
+Декорирование банковской карты  
+
+
+
+
+{\ttfamily \#include $<$C\+Bank\+Card\+Decorator.\+h$>$}
+
+
+
+Inheritance diagram for C\+Bank\+Card\+Decorator\+:
+% FIG 0
+
+
+Collaboration diagram for C\+Bank\+Card\+Decorator\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries C\+Bank\+Card\+Decorator} (std\+::shared\+\_\+ptr$<$ \hyperlink{classICard}{I\+Card} $>$ new\+\_\+card)\hypertarget{classCBankCardDecorator_a2b523c0c4a0c6dec11e534480a8ada7f}{}\label{classCBankCardDecorator_a2b523c0c4a0c6dec11e534480a8ada7f}
+
+\item 
+void \hyperlink{classCBankCardDecorator_a2372178469c6dd8145cbd458b6e91613}{Get\+\_\+\+Info} ()
+\begin{DoxyCompactList}\small\item\em Выводит информацию о банковской карте \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCBankCardDecorator_af458f2873e33461a3458f55a58abd9e9}{Get\+\_\+\+Name} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей имя \end{DoxyCompactList}\item 
+unsigned long long int \hyperlink{classCBankCardDecorator_a301f1bd18fee261fd7dc8c1cb82b1ef0}{Get\+\_\+\+Id} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей id. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classCBankCardDecorator_a9ad5255c6852c5810319cce514bc57dc}{Get\+\_\+\+End} () const 
+\begin{DoxyCompactList}\small\item\em Реализация функции, возвращающей дату окончания срок действия карты \end{DoxyCompactList}\item 
+bool \hyperlink{classCBankCardDecorator_a2f089d4c830879f2688ee83c95539967}{Is\+\_\+\+Valuable} ()
+\begin{DoxyCompactList}\small\item\em Проверяет, что карта работает \end{DoxyCompactList}\item 
+bool \hyperlink{classCBankCardDecorator_ad390b98d1f4dd7cec664387d6b368f62}{Withdraw\+\_\+\+Money} (double amount)
+\begin{DoxyCompactList}\small\item\em Функция снятия денег \end{DoxyCompactList}\item 
+bool \hyperlink{classCBankCardDecorator_a25081d48cdb408de960eef3474e6ddb7}{Put\+\_\+\+Money} (double amount)
+\begin{DoxyCompactList}\small\item\em Функция пополнения счета \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Декорирование банковской карты 
+
+\subsection{Member Function Documentation}
+\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Get\+\_\+\+End@{Get\+\_\+\+End}}
+\index{Get\+\_\+\+End@{Get\+\_\+\+End}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+End() const }{Get_End() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Bank\+Card\+Decorator\+::\+Get\+\_\+\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCBankCardDecorator_a9ad5255c6852c5810319cce514bc57dc}{}\label{classCBankCardDecorator_a9ad5255c6852c5810319cce514bc57dc}
+
+
+Реализация функции, возвращающей дату окончания срок действия карты 
+
+\begin{DoxyReturn}{Returns}
+дата окончания срок действия карты 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Get\+\_\+\+Id@{Get\+\_\+\+Id}}
+\index{Get\+\_\+\+Id@{Get\+\_\+\+Id}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Id() const }{Get_Id() const }}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long long int C\+Bank\+Card\+Decorator\+::\+Get\+\_\+\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCBankCardDecorator_a301f1bd18fee261fd7dc8c1cb82b1ef0}{}\label{classCBankCardDecorator_a301f1bd18fee261fd7dc8c1cb82b1ef0}
+
+
+Реализация функции, возвращающей id. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Get\+\_\+\+Info@{Get\+\_\+\+Info}}
+\index{Get\+\_\+\+Info@{Get\+\_\+\+Info}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Info()}{Get_Info()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Bank\+Card\+Decorator\+::\+Get\+\_\+\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCBankCardDecorator_a2372178469c6dd8145cbd458b6e91613}{}\label{classCBankCardDecorator_a2372178469c6dd8145cbd458b6e91613}
+
+
+Выводит информацию о банковской карте 
+
+выводит информацию о балансе карты и информацию о пользователе 
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Get\+\_\+\+Name@{Get\+\_\+\+Name}}
+\index{Get\+\_\+\+Name@{Get\+\_\+\+Name}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Name() const }{Get_Name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+Bank\+Card\+Decorator\+::\+Get\+\_\+\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classCBankCardDecorator_af458f2873e33461a3458f55a58abd9e9}{}\label{classCBankCardDecorator_af458f2873e33461a3458f55a58abd9e9}
+
+
+Реализация функции, возвращающей имя 
+
+\begin{DoxyReturn}{Returns}
+Имя пользователя 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classICard}{I\+Card}.
+
+\index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Is\+\_\+\+Valuable@{Is\+\_\+\+Valuable}}
+\index{Is\+\_\+\+Valuable@{Is\+\_\+\+Valuable}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Is\+\_\+\+Valuable()}{Is_Valuable()}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Bank\+Card\+Decorator\+::\+Is\+\_\+\+Valuable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankCardDecorator_a2f089d4c830879f2688ee83c95539967}{}\label{classCBankCardDecorator_a2f089d4c830879f2688ee83c95539967}
+
+
+Проверяет, что карта работает 
+
+Здесь происходит проверка того, что карта работает(напимер не была ли заблокирована пользователем) \index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Put\+\_\+\+Money@{Put\+\_\+\+Money}}
+\index{Put\+\_\+\+Money@{Put\+\_\+\+Money}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Put\+\_\+\+Money(double amount)}{Put_Money(double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Bank\+Card\+Decorator\+::\+Put\+\_\+\+Money (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankCardDecorator_a25081d48cdb408de960eef3474e6ddb7}{}\label{classCBankCardDecorator_a25081d48cdb408de960eef3474e6ddb7}
+
+
+Функция пополнения счета 
+
+Тип возвращаемого значения -\/ bool, если операция успешна -\/ счет пополнен, иначе сообщение об ошибке \index{C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}!Withdraw\+\_\+\+Money@{Withdraw\+\_\+\+Money}}
+\index{Withdraw\+\_\+\+Money@{Withdraw\+\_\+\+Money}!C\+Bank\+Card\+Decorator@{C\+Bank\+Card\+Decorator}}
+\subsubsection[{\texorpdfstring{Withdraw\+\_\+\+Money(double amount)}{Withdraw_Money(double amount)}}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Bank\+Card\+Decorator\+::\+Withdraw\+\_\+\+Money (
+\begin{DoxyParamCaption}
+\item[{double}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classCBankCardDecorator_ad390b98d1f4dd7cec664387d6b368f62}{}\label{classCBankCardDecorator_ad390b98d1f4dd7cec664387d6b368f62}
+
+
+Функция снятия денег 
+
+Тип возвращаемого значения -\/ bool, если операция успешна -\/ деньги снимаются, иначе сообщение об ошибке 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+Bank\+Card\+Decorator.\+h\end{DoxyCompactItemize}
