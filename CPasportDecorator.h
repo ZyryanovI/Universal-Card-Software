@@ -7,6 +7,10 @@
 #include <bits/shared_ptr.h>
 #include <vector>
 
+/**
+ * \brief Декорирование паспорта
+ *
+ */
 
 class CPasportDecorator : public ICard{
 public:
@@ -17,6 +21,12 @@ public:
 
     ~CPasportDecorator()
     {}
+
+    /**
+     * \brief Выводит информацию о паспорте
+     * \details Выводит имя пользователя, регистрацию, именя женыи детей, если они есть
+     *
+     */
 
     void Get_Info()
     {
@@ -30,30 +40,60 @@ public:
         }
     }
 
+    /**
+     * \brief Реализация функции, возвращающей имя
+     * \return Имя пользователя
+     */
+
     std::string Get_Name() const
     {
         return card->Get_Name();
     }
+
+    /**
+     * \brief Реализация функции, возвращающей id
+     * \return id
+     */
 
     unsigned long long int Get_Id() const
     {
         return card->Get_Id();
     }
 
+    /**
+     * \brief Реализация функции, возвращающей дату окончания срок действия карты
+     * \return дата окончания срок действия карты
+     */
+
     std::string Get_End() const
     {
         return card->Get_End();
     }
+
+    /**
+     * \brief Функции добавления детей
+     * \param child - указатель на карту ребенка
+     */
 
     void Add_Child(std::shared_ptr<ICard> child)
     {
         children.push_back(child);
     }
 
+    /**
+     * \brief функция изменения регистрации
+     * \param new_registration_place - новое место прописки
+     */
+
     void Set_Registration_Place(std::string new_registration_place)
     {
         registration_place = new_registration_place;
     }
+
+    /**
+     * \brief Функция изменения жены
+     * \param new_wife - указатель на карту жены
+     */
 
     void Set_Wife(std::shared_ptr<ICard> new_wife)
     {

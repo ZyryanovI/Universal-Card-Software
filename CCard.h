@@ -5,6 +5,9 @@
 #include <string>
 #include "ICard.h"
 
+/**
+ * \brief Реализация карты
+ */
 
 class CCard : public ICard{
 public:
@@ -15,6 +18,11 @@ public:
         ending_day = new_ending_day;
     }
 
+    /**
+     * \brief Выводит информацию о карте
+     * \details Выводит имя, id и дату окончания срока действия
+     */
+
     void Get_Info()
     {
         std::cout<<"Card's id is "<<id<<std::endl;
@@ -22,15 +30,30 @@ public:
         std::cout<<"Сard can be used up to "<<ending_day<<std::endl;
     }
 
+    /**
+     * \brief Реализация функции, возвращающей имя
+     * \return Имя пользователя
+     */
+
     std::string Get_Name() const
     {
         return user_full_name;
     }
 
+    /**
+     * \brief Реализация функции, возвращающей id
+     * \return id
+     */
+
     unsigned long long int Get_Id() const
     {
         return id;
     }
+
+    /**
+     * \brief Реализация функции, возвращающей дату окончания срок действия карты
+     * \return дата окончания срок действия карты
+     */
 
     std::string Get_End() const
     {

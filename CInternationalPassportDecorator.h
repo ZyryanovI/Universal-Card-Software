@@ -7,6 +7,10 @@
 #include <bits/shared_ptr.h>
 #include <vector>
 
+/**
+ * \brief Декорирование загран паспорта
+ *
+ */
 
 class CInternationalPasportDecorator : public ICard{
 public:
@@ -17,6 +21,12 @@ public:
 
     ~CInternationalPasportDecorator()
     {}
+
+    /**
+     * \brief Функция, выводящаяя информацию о загран паспорте
+     * \details Выводит имя, страну постоянного места жительства и посещенные страны
+     *
+     */
 
     void Get_Info()
     {
@@ -29,25 +39,51 @@ public:
         }
     }
 
+    /**
+     * \brief Реализация функции, возвращающей имя
+     * \return Имя пользователя
+     */
+
     std::string Get_Name() const
     {
         return card->Get_Name();
     }
+
+    /**
+     * \brief Реализация функции, возвращающей id
+     * \return id
+     */
 
     unsigned long long int Get_Id() const
     {
         return card->Get_Id();
     }
 
+    /**
+     * \brief Реализация функции, возвращающей дату окончания срок действия карты
+     * \return дата окончания срок действия карты
+     */
+
     std::string Get_End() const
     {
         return card->Get_End();
     }
 
+    /**
+     * \brief Установка новой страны постоянного места проживания
+     *
+     * \param new_home_country
+     */
+
     void Set_Home_Country(std::string new_home_country)
     {
         home_country = new_home_country;
     }
+
+    /**
+     * \brief Добавляет страну в посещенные
+     * \param new_country
+     */
 
     void Add_Country(std::string new_country)
     {

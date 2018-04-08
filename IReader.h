@@ -5,6 +5,14 @@
 #include <bits/shared_ptr.h>
 #include "ICard.h"
 
+/**
+ * \brief интерфейс считывающего устройства
+ *
+ * Используется для реализации различных считывающих устройств
+ *
+ *
+ */
+
 class IReader{
 public:
     virtual ~IReader() = 0;

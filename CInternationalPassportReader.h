@@ -1,9 +1,12 @@
 #ifndef UNIVERSAL_CARD_SOFTWARE_CINTERNATIONALPASSPORTREADER_H
 #define UNIVERSAL_CARD_SOFTWARE_CINTERNATIONALPASSPORTREADER_H
 
-
 #include "IReader.h"
 #include "CInternationalPassportDecorator.h"
+
+/**
+ * \brief Считывающее устройство для загран паспорта
+ */
 
 class CInternationalPasportReader : public IReader{
 public:
@@ -12,8 +15,13 @@ public:
         card = new_card;
     }
 
-    ~CPasportReader()
+    ~CInternationalPasportReader()
     {}
+
+    /**
+     * \brief Функция считывающая карту
+     * @param new_card - указатель на карту
+     */
 
     void Read(std::shared_ptr<ICard> new_card)
     {
@@ -21,6 +29,10 @@ public:
         std::shared_ptr<CInternationalPasportDecorator> ptr_cur_card(std::make_shared(&cur_card));
         card = ptr_cur_card;
     }
+
+    /**
+     * \brief Выводит информацию
+     */
 
     void Show_Info()
     {

@@ -5,6 +5,10 @@
 #include <iostream>
 #include "ICard.h"
 
+/**
+ * \brief Декорирование банковской карты
+ */
+
 class CBankCardDecorator : public ICard{
 
 public:
@@ -17,6 +21,11 @@ public:
     ~CBankCardDecorator()
     {}
 
+    /**
+     * \brief Выводит информацию о банковской карте
+     * \details выводит информацию о балансе карты и информацию о пользователе
+     */
+
     void Get_Info()
     {
         std::cout<<"Your balance in "<<balance<<std::endl;
@@ -24,27 +33,56 @@ public:
         card->Get_Info();
     }
 
+    /**
+     * \brief Реализация функции, возвращающей имя
+     * \return Имя пользователя
+     */
+
     std::string Get_Name() const
     {
         return card->Get_Name();
     }
+
+    /**
+     * \brief Реализация функции, возвращающей id
+     * \return id
+     */
 
     unsigned long long int Get_Id() const
     {
         return card->Get_Id();
     }
 
+    /**
+     * \brief Реализация функции, возвращающей дату окончания срок действия карты
+     * \return дата окончания срок действия карты
+     */
+
     std::string Get_End() const
     {
         return card->Get_End();
     }
 
+    /**
+     * \brief Проверяет, что карта работает
+     *
+     * Здесь происходит проверка того,
+     * что карта работает(напимер не была ли заблокирована пользователем)
+     *
+     */
 
     bool Is_Valuable()
     {
-        //Здесь происходит проверка того, что карта работает(напимер не была ли заблокирована пользователем)
         return true;
     }
+
+    /**
+     * \brief Функция снятия денег
+     *
+     * Тип возвращаемого значения - bool,
+     * если операция успешна - деньги снимаются, иначе сообщение об ошибке
+     *
+     */
 
     bool Withdraw_Money(double amount)
     {
@@ -64,6 +102,14 @@ public:
             return false;
         }
     }
+
+    /**
+     * \brief Функция пополнения счета
+     *
+     * Тип возвращаемого значения - bool,
+     * если операция успешна - счет пополнен, иначе сообщение об ошибке
+     *
+     */
 
     bool Put_Money(double amount)
     {
