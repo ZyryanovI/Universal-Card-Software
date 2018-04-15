@@ -85,7 +85,7 @@ public:
      * \param new_registration_place - новое место прописки
      */
 
-    void Set_Registration_Place(std::string new_registration_place)
+    void Set_Registration_Place(std::string &new_registration_place)
     {
         registration_place = new_registration_place;
     }
@@ -95,9 +95,9 @@ public:
      * \param new_wife - указатель на карту жены
      */
 
-    void Set_Wife(std::shared_ptr<ICard> new_wife)
+    void Set_Spouse(std::shared_ptr<ICard> new_wife)
     {
-        wife = new_wife;
+        spouse = new_wife;
     }
 
 
@@ -106,7 +106,7 @@ private:
     std::shared_ptr<ICard> card;
     std::string registration_place;
     std::vector<std::shared_ptr<ICard>> children;
-    std::shared_ptr<ICard> wife;
+    std::shared_ptr<ICard> spouse;
 };
 
 

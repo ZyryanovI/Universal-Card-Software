@@ -75,7 +75,7 @@ public:
      * \param new_home_country
      */
 
-    void Set_Home_Country(std::string new_home_country)
+    void Set_Home_Country(std::string &new_home_country)
     {
         home_country = new_home_country;
     }
@@ -85,7 +85,7 @@ public:
      * \param new_country
      */
 
-    void Add_Country(std::string new_country)
+    void Add_Country(std::string &new_country)
     {
         visited_countries.push_back(new_country);
     }
