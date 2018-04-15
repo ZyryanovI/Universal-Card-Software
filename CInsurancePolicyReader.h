@@ -50,7 +50,7 @@ public:
      * \param new_amount_paid сколько заплатил клиент
      */
 
-    void Add_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)
+    void Add_Situation(std::string &new_situation_name, double new_payments, double new_amount_paid)
     {
         card->Add_Situation(new_situation_name, new_payments, new_amount_paid);
     }
@@ -62,7 +62,7 @@ public:
      * \param new_amount_paid сколько заплатил клиент
      */
 
-    void Remove_Situation(std::string new_situation_name, double new_payments, double new_amount_paid)
+    void Remove_Situation(std::string &new_situation_name, double new_payments, double new_amount_paid)
     {
         card->Remove_Situation(new_situation_name, new_payments, new_amount_paid);
     }
