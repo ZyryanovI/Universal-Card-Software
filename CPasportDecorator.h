@@ -32,7 +32,7 @@ public:
     {
         card->Get_Info();
         std::cout<<"Registration place is "<<registration_place<<std::endl;
-        std::cout<<"Wife is "<<wife->Get_Name()<<std::endl;
+        std::cout<<"Spouse is "<< spouse->Get_Name()<<std::endl;
         std::cout<<"Children are: "<<std::endl;
         for(int i =0; i<children.size(); ++i)
         {
@@ -95,9 +95,9 @@ public:
      * \param new_wife - указатель на карту жены
      */
 
-    void Set_Spouse(std::shared_ptr<ICard> new_wife)
+    void Set_Spouse(std::shared_ptr<ICard> new_spouse)
     {
-        spouse = new_wife;
+        spouse = new_spouse;
     }
 
 
