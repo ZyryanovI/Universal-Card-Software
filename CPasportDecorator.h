@@ -85,7 +85,7 @@ public:
      * \param new_registration_place - новое место прописки
      */
 
-    void Set_Registration_Place(std::string &new_registration_place)
+    void Set_Registration_Place(const std::string &new_registration_place)
     {
         registration_place = new_registration_place;
     }

@@ -75,7 +75,7 @@ public:
      * @param amount
      */
 
-    void Put_Money_To_Phone(std::string &number, double amount)
+    void Put_Money_To_Phone(const std::string &number, double amount)
     {
         if(card->Withdraw_Money(amount))
         {

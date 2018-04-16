@@ -19,7 +19,7 @@
  */
 
 struct InsuranceSituation{
-    InsuranceSituation(std::string new_situation_name, double new_payments, double new_amount_paid)
+    InsuranceSituation(const std::string new_situation_name, double new_payments, double new_amount_paid)
     {
         situation_name = new_situation_name;
         payments = new_payments;
@@ -92,7 +92,7 @@ public:
      * @param new_amount_paid
      */
 
-    void Add_Situation(std::string &new_situation_name, double new_payments, double new_amount_paid)
+    void Add_Situation(const std::string &new_situation_name, double new_payments, double new_amount_paid)
     {
         situantions.push_back(InsuranceSituation(new_situation_name, new_payments, new_amount_paid));
     }
@@ -106,7 +106,7 @@ public:
      * @return Индекс вхождения ситуации, если не найден -1
      */
 
-    int Find_Situation(std::string &new_situation_name, double new_payments, double new_amount_paid)
+    int Find_Situation(const std::string &new_situation_name, double new_payments, double new_amount_paid)
     {
         for(int i = 0; i<situantions.size(); ++i)
         {
@@ -126,7 +126,7 @@ public:
      * @param new_amount_paid
      */
 
-    void Remove_Situation(std::string &new_situation_name, double new_payments, double new_amount_paid)
+    void Remove_Situation(const std::string &new_situation_name, double new_payments, double new_amount_paid)
     {
         int k = Find_Situation(new_situation_name, new_payments, new_amount_paid);
         if(k == -1)

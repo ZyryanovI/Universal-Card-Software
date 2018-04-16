@@ -11,7 +11,7 @@
 
 class CCard : public ICard{
 public:
-    CCard(unsigned long long int new_id, std::string &new_user_full_name, std::string &new_ending_day)
+    CCard(unsigned long long int new_id,const std::string &new_user_full_name,const std::string &new_ending_day)
     {
         id = new_id;
         user_full_name = new_user_full_name;
